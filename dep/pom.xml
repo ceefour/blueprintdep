@@ -25,6 +25,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
+						<Import-Package>!org.osgi.service.blueprint, org.osgi.service.blueprint.container, *</Import-Package>
 						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Name>${project.name}</Bundle-Name>
 						<Bundle-Version>${project.version}</Bundle-Version>

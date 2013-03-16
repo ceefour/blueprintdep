@@ -3,6 +3,9 @@
  */
 package com.hendyirawan.blueprintdep.dep;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /**
  * @author rudi
@@ -10,10 +13,11 @@ package com.hendyirawan.blueprintdep.dep;
  */
 public class HelloImpl implements HelloService {
 
-//	private static final Logger log = LoggerFactory.getLogger(HelloImpl.class);
+	private static final Logger log = LoggerFactory.getLogger(HelloImpl.class);
 	
 	private void say(String something) {
-		System.out.println(something);
+//		System.out.println(something);
+		log.warn(something);
 	}
 	
 	/* (non-Javadoc)
